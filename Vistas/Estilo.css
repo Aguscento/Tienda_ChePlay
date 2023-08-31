@@ -1,0 +1,601 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --colorPrincipal: #243757;
+    --colorFondo: #dad5b7;
+    --colorSecundario: #3a5f6f;
+    --colorDetalles: #665e52;
+}
+.inicio {
+    height:100vh;
+    width:100%;
+    background-color:var(--colorFondo);
+}
+.contenedor{
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+    height:100vh;
+    position:relative;
+    animation:aparecer 3s ease;
+}
+#lblInicio {
+    font-size: 5rem;
+    color: var(--colorPrincipal);
+    font-weight: bold;
+    padding-bottom: 0rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+#lblInfo{
+    font-size:2rem;
+    color:var(--colorSecundario);
+    padding-bottom:2.5rem;
+}
+.contLinks{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+}
+.link{
+    background-color:var(--colorPrincipal);
+    text-decoration:none;
+    color:var(--colorFondo);
+    font-size:1.2rem;
+    padding:0.7rem 1rem;
+    font-weight:bolder;
+    border-radius:10px;
+    width:15%;
+    text-align:center;
+    transition:all 0.7s ease;
+    border:2px var(--colorFondo) solid;
+}
+.link:hover{
+    background-color:var(--colorFondo);
+    color:var(--colorPrincipal);
+    border:2px var(--colorPrincipal) solid;
+}
+@keyframes aparecer{
+    0%{
+        right:200%;
+    }
+    100%{
+        right:0;
+    }
+}
+/*---De aca para arriba es el CSS de inicio.aspx---*/
+
+.Cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.4rem 0rem;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.logo {
+    width: 11%;
+}
+main{
+    background-color:var(--colorFondo);
+    height:100vh;
+}
+.tienda{
+    background-color: var(--colorFondo);
+    width: 100%;
+    margin: 0 auto;
+}
+.LinkCabecera{
+    display:flex;
+    gap:1.2rem;
+    justify-content:center;
+    align-items:center;
+}
+.linkC {
+    background-color: var(--colorPrincipal);
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding:0.3rem 1.1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.7s ease;
+    border: 2px white solid;
+}
+.linkC:hover {
+    background-color: white;
+    color: var(--colorPrincipal);
+    border: 2px var(--colorPrincipal) solid;
+}
+.ContFiltro{
+    width:100%;
+    height:25vh;
+    padding-top:4rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.tituloTienda{
+    font-size:3rem;
+    color:var(--colorPrincipal);
+    padding-bottom:1rem;
+    font-weight:bold;
+}
+.filtro{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+}
+.textoFiltro{
+    font-size:1.1rem;
+    color:var(--colorSecundario);
+
+}
+.botonFiltro {
+    background-color: var(--colorPrincipal);
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem 1.1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.7s ease;
+    border: 2px var(--colorFondo) solid;
+    cursor:pointer;
+}
+.botonFiltro:hover{
+    background-color:var(--colorFondo);
+    color:var(--colorPrincipal);
+    border:2px var(--colorPrincipal) solid;
+}
+.contenedorJuegos{
+    display:flex;
+    justify-content:space-between;
+    align-items:start;
+    margin-bottom:3rem;
+}
+.contFiltros {
+    width: 35%;
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:center;
+    gap:3rem;
+}
+.listaJuegos{
+    width:65%;
+    padding-right:10px;
+}
+.caja {
+    width: 450px;
+}
+.imgLista {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.nombreJuego {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align:center;
+    color:var(--colorPrincipal);
+    font-weight:bold;
+    font-size:1.1rem;
+}
+.botonCarrito {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px 10px;
+    text-align: center;
+    height: 40px;
+    margin-left:30%;
+    background-color:var(--colorPrincipal);
+    color:white;
+    border:1px white solid;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:0.9rem;
+    transition:all 0.5s ease;
+}
+.botonCarrito:hover {
+    background-color: white;
+    color: var(--colorPrincipal);
+    border: 1px var(--colorPrincipal) solid;
+}
+.descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    height: 95px;
+    padding: 0px 10px;
+    color: var(--colorSecundario);
+    font-weight: 600;
+}
+.btnCategoria{
+    font-size:1.1rem;
+    padding:0.5rem 0rem;
+    margin-top:1.5rem;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+    background-color:var(--colorSecundario);
+    color:white;
+    transition:all 1s ease;
+}
+.btnCategoria:hover {
+    background-color: #203d63;
+}
+.nomUser{
+    border: 1px var(--colorPrincipal) solid;
+    padding: 0.4rem 0.9rem;
+    border-radius:8px;
+    color:var(--colorPrincipal);
+    font-weight:bold;
+}
+/*De aca para arriba es el CSS de TiendaJuegos.aspx*/
+
+.ingresar{
+    height:100vh;
+    background-color:var(--colorFondo);
+}
+.contForm{
+    width:65%;
+    margin:0 auto;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    animation:difuminado 2s ease;
+}
+@keyframes difuminado{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.tituloIngresar{
+    font-size:3.5rem;
+    color:var(--colorPrincipal);
+    font-weight:bold;
+    padding-bottom:1.5rem;
+}
+.labelNom {
+    font-size: 1rem;
+    color: var(--colorSecundario);
+    font-weight: bold;
+    padding:0.8rem 0rem;
+}
+.txtBoxIng{
+    padding:0.2rem 0.6rem;
+    text-align:center;
+}
+.noExiste{
+    padding-top:0.4rem;
+    color:red;
+    font-weight:bold;
+}
+.btnIng {
+    padding: 0.4rem 1rem;
+    margin-top: 1.5rem;
+    background-color: var(--colorPrincipal);
+    color: var(--colorFondo);
+    border: 1px var(--colorFondo) solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+.btnIng:hover {
+    background-color: var(--colorFondo);
+    color: var(--colorPrincipal);
+    border: 1px var(--colorPrincipal) solid;
+}
+.MandoRegistrarse{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    gap:0.3rem;
+    padding-top:2.5rem;
+}
+.preguntaReg{
+    font-size:1rem;
+    color:var(--colorSecundario);
+}
+.linkRegis{
+    text-decoration:none;
+    color:var(--colorPrincipal);
+    font-size:1rem;
+}
+/*de aca para arriba es el login*/
+.Registrarse {
+    height: 100vh;
+    background-color: var(--colorFondo);
+}
+.ContFormRegis {
+    width: 65%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: difuminado 2s ease;
+}
+.tituloRegistrar {
+    font-size: 3.5rem;
+    color: var(--colorPrincipal);
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+.DeDos {
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    width:50%;
+    justify-content:space-around
+}
+.cajasForm{
+    display:flex;
+    flex-direction:column;
+}
+.lblDatosReg {
+    font-size: 1rem;
+    color: var(--colorSecundario);
+    padding-bottom:0.35rem;
+    padding-top:0.9rem;
+}
+.txtDatosReg {
+    padding: 0.2rem 0.6rem;
+    text-align:center;
+}
+.btnRegistrarse {
+    padding: 0.4rem 1rem;
+    margin-top: 2rem;
+    background-color: var(--colorPrincipal);
+    color: var(--colorFondo);
+    border: 1px var(--colorFondo) solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+.btnRegistrarse:hover {
+    background-color: var(--colorFondo);
+    color: var(--colorPrincipal);
+    border: 1px var(--colorPrincipal) solid;
+}
+.yaTengoCuenta {
+    gap: 0.3rem;
+    padding-top: 2.5rem;
+}
+.LinkMandaIniciarSession {
+    text-decoration: none;
+    color: var(--colorPrincipal);
+    font-size: 1rem;
+}
+/*de aca para arriba es el ingresar y registrarte*/
+
+.Agregar {
+    height: 150vh;
+    background-color: var(--colorFondo);
+}
+.contAgregar {
+    padding-top:1rem;
+    width: 65%;
+    margin: 0 auto;
+    height: 145vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: difuminado 1.7s ease;
+}
+
+.contCostado {
+    display: flex;
+    /*justify-content:center;
+    align-items:center;*/
+    gap: 1rem;
+}
+.costado {
+    display: flex;
+    flex-direction: column;
+}
+.tituloAgregar {
+    font-size: 3.5rem;
+    color: var(--colorPrincipal);
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+.lblDatosAgregar {
+    font-size: 1.1rem;
+    color: var(--colorSecundario);
+    padding-bottom: 0.35rem;
+    padding-top: 0.9rem;
+}
+.txtDatosAgregar {
+    padding: 0.2rem 0.6rem;
+}
+/*de aca para arriba es el agregar.aspx*/
+.Eliminar {
+    height: 100vh;
+    background-color: var(--colorFondo);
+}
+.contEliminar {
+    width: 65%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: difuminado 1.7s ease;
+}
+.tituloEliminar {
+    font-size: 3.5rem;
+    color: var(--colorPrincipal);
+    font-weight: bold;
+    padding-bottom: 1.2rem;
+}
+.lblEliminar {
+    font-size: 1.2rem;
+    color: var(--colorSecundario);
+    padding-bottom: 1rem;
+}
+.txtEliminar {
+    padding: 0.2rem 0.6rem;
+}
+/*de aca para arriba eliminar.aspx*/
+
+.Editar {
+    height: 100vh;
+    background-color: var(--colorFondo);
+}
+.contGrillaEditar {
+    width: 65%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: difuminado 1.7s ease;
+}
+.grilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+.precio{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:0.5rem;
+}
+.precioUnitario{
+    font-size:1rem;
+    color:black;
+    font-weight:bold;
+}
+.simboloPesos {
+    font-size: 0.9rem;
+    color: green;
+    font-weight: bold;
+}
+/*De aca para arriba es editar juego*/
+
+.historial {
+    height: 100vh;
+    background-color: var(--colorFondo);
+}
+.contHistorial {
+    padding-top: 1rem;
+    width: 65%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: difuminado 1.7s ease;
+}
+.grid {
+    text-align:center;
+}
+.lblVentas{
+    text-align:center;
+    padding:0.7rem 1.2rem;
+}
+.grillaDetalles{
+    padding-top:2rem;
+}
+.contCarrito {
+    padding-top: 1rem;
+    width: 65%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: difuminado 1.7s ease;
+}
+/*DE ACA PARA ABAJO ES REPORTES*/
+
+.reporte {
+    background-color: var(--colorFondo);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contReporte {
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.subtituloReporte {
+    font-size: 2.3rem;
+    color: var(--colorSecundario);
+    font-weight: bold;
+    padding-top:1.5rem;
+    padding-bottom:0.8rem;
+}
+.descripcionReporte{
+    font-size:1rem;
+    font-weight:bold;
+}
+.delado{
+    display:flex;
+    gap:1rem;
+    padding:1rem 0rem;
+}
+.txtreporte{
+    text-align:center;
+    padding:0.3rem 0rem;
+    font-size:1rem;
+}
+.gridRepo{
+    margin-top: 1rem;
+    text-align:center;
+}
+.abajo{
+    display:flex;
+    flex-direction:column;
+}
